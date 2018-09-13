@@ -1,6 +1,17 @@
 extends layout.pug
 
-//- block contentSection
+block contentSection
+	.col-md-3
+		section.user-selector
+			.user-selector__filter
+				label.user-selector__label(for="user-selector__filter-string").user-selector__header Select user
+				.input-group
+					.input-group-prepend
+						.input-group-text.user-selector__prepend.fas.fa-search#user-selector__filter-string
+					input.form-control.user-selector__input(type="text" placeholder="Search for username..." id="user-selector__filter-string")
+			.user-selector__users
+					ul.list-group.user-selector__user-list
+						each user in users
+							a.list-group-item.list-group-item-action.user-selector__user(id=`${user._id}` href="")= user.name
 
-
-//- block scripts
+block scripts

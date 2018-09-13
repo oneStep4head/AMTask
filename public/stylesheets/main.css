@@ -30,7 +30,7 @@ html, body {
 	margin: auto;
 }
 .header {
-	margin-bottom: 40px;
+	/* margin-bottom: 40px; */
 }
 .new-task__add-mark {
 	display: block;
@@ -66,6 +66,19 @@ html, body {
 	align-items: center;
 } */
 
+.user-selector{
+	
+	height: 100vh;
+	border-right: 3px solid #E9ECEF;
+}
+.user-selector__filter {
+	padding: 10px;
+	border-bottom: 3px solid #E9ECEF;
+}
+.user-selector__users {
+	padding: 10px;
+
+}
 
 .footer {
 	flex: 0 0 auto;
